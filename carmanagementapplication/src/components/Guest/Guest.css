@@ -1,0 +1,164 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Section Styling */
+.guest-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 500px;
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+  padding: 20px;
+}
+
+/* Guest Div Styling */
+.guest-div {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 700px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  text-align: center;
+}
+
+/* Logo Text Styling */
+.my-car p {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.my-span {
+  color: #fc5c7d;
+}
+
+/* Car Image Styling */
+.car-logo {
+  margin: 20px;
+}
+
+.car-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* Button Styling */
+.button-container {
+  margin-top: 10px;
+}
+
+.button-1 {
+  width: 30%;
+  padding: 12px;
+  background-color: #6a82fb;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-1:hover {
+  background-color: #4e62c8;
+}
+
+/* Responsive Design */
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+  .guest-div {
+      padding: 20px;
+      max-width: 90%;
+      border-radius: 20px;
+  }
+
+  .my-car p {
+      font-size: 1.5rem;
+  }
+
+  .car-img {
+      max-width: 300px;
+      margin-left: 0;
+  }
+
+  .button-1 {
+      font-size: 0.9rem;
+      width: 80%;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .guest-div {
+      padding: 25px;
+      max-width: 80%;
+  }
+
+  .my-car p {
+      font-size: 2.5rem;
+  }
+
+  .car-img {
+      max-width: 400px;
+  }
+
+  .button-1 {
+      font-size: 1rem;
+      width: 50%;
+  }
+}
+
+/* Large screens (desktops and larger tablets) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .guest-div {
+      padding: 30px;
+      max-width: 85%;
+  }
+
+  .my-car p {
+      font-size: 3rem;
+  }
+
+  .car-img {
+      max-width: 450px;
+  }
+
+  .button-1 {
+      font-size: 1rem;
+      width: 40%;
+  }
+}
+
+/* Extra large screens (large desktops) */
+@media (min-width: 1201px) {
+  .guest-section {
+      max-width: 1000px;
+  }
+
+  .guest-div {
+      padding: 40px;
+  }
+
+  .my-car p {
+      font-size: 4rem;
+  }
+
+  .car-img {
+      max-width: 500px;
+  }
+
+  .button-1 {
+      width: 30%;
+  }
+}

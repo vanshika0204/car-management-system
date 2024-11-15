@@ -1,0 +1,121 @@
+/* Container for the entire add product section */
+.addproduct {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for each input field container */
+.addproduct-itemfield {
+  margin-bottom: 20px;
+}
+
+.addproduct-itemfield p {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for the input fields */
+.addproduct-itemfield input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.addproduct-itemfield input[type="text"]:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+/* Layout for fields that are grouped together (Car Type, Company, Dealer) */
+.addproduct-price {
+  display: flex;
+  gap: 15px;
+}
+
+.addproduct-price .addproduct-itemfield {
+  flex: 1;
+}
+
+/* Styling for the image upload field */
+.addproduct-thumbnail-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px dashed #4a90e2;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.addproduct-thumbnail-img:hover {
+  border-color: #357ABD;
+}
+
+/* Styling for the ADD button */
+.addproduct-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.addproduct-btn:hover {
+  background-color: #357ABD;
+  transform: translateY(-2px);
+}
+
+.addproduct-btn:active {
+  transform: translateY(1px);
+}
+
+/* Responsive styling */
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+  .addproduct-price {
+      flex-direction: column;
+      gap: 20px;
+  }
+}
+
+/* For small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .addproduct {
+    padding: 15px;
+  }
+
+  .addproduct-itemfield p {
+    font-size: 12px;
+  }
+
+  .addproduct-itemfield input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .addproduct-thumbnail-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .addproduct-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,44 @@
+/* Add this to your CSS file (e.g., Sidebar.css) */
+
+.sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between buttons */
+  padding: 20px;
+  background-color: #f5f7fa; /* Light background color */
+  border-radius: 8px;
+}
+
+.sidebar-item {
+  display: flex;
+  flex-direction: horizontal;
+  align-items: center;
+  padding: 15px;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4a90e2; /* Button background color */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.sidebar-item:hover {
+  background-color: #357ABD; /* Darker shade on hover */
+  transform: translateY(-5px); /* Lift effect */
+}
+
+.sidebar-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 2px;
+}
+
+.sidebar-item p {
+  margin: 0;
+  text-align: center;
+}

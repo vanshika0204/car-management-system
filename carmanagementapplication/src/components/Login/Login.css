@@ -1,0 +1,113 @@
+/* Login.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .loginsignup {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .loginsignup:hover {
+    transform: translateY(-5px);
+  }
+  
+  .loginsignup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .loginsignup h1 {
+    font-size: 2rem;
+    color: #4e54c8;
+    margin-bottom: 20px;
+  }
+  
+  .loginsignup-fields {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .loginsignup-fields input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .loginsignup-fields input:focus {
+    border-color: #4e54c8;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4e54c8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #8f94fb;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  .loginsignup-login {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .loginsignup-login span {
+    color: #4e54c8;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .loginsignup-login span:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .loginsignup {
+      padding: 15px;
+    }
+  
+    .loginsignup h1 {
+      font-size: 1.5rem;
+    }
+  
+    .loginsignup-fields input,
+    button {
+      font-size: 0.9rem;
+    }
+  }
+  
