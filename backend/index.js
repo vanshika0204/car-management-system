@@ -5,15 +5,15 @@ const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
-// const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 
 app.use(express.json());
 app.use(cors(
-  {
-    origin: ["https://car-management-system-tn39.vercel.app/"],
-    methods: ["POST", "GET"],
-    credentials: true
-  }
+  // {
+  //   origin: ["https://car-management-system-tn39.vercel.app/"],
+  //   methods: ["POST", "GET"],
+  //   credentials: true
+  // }
 ));
 
 // Database Connection With MongoDB
