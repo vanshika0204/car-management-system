@@ -87,7 +87,7 @@ const Product = mongoose.model("Product", {
 
 // ROOT API Route For Testing
 app.get("/", (req, res) => {
-  res.send("Root");
+  res.json("Root");
 });
 
 
