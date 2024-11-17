@@ -9,7 +9,7 @@ import { ProductDetail } from './components/ProductDetail/ProductDetail.jsx';
 import { Login } from './components/Login/Login.jsx';
 import Home from './components/Home/Home.jsx';
 
-export const backend_url = 'http://localhost:4000';
+export const backend_url = 'https://car-management-system-zenm.vercel.app/';
 
 function App() {
   const router = createBrowserRouter([
